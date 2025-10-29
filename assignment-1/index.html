@@ -3,21 +3,18 @@
     <head>
         <meta charset="utf-8">
         <title>Pizza Petes</title>
-        <style>
-            ul {list-style-type: none;
-                padding-left: 0;}
-            li {margin-bottom: 5px;}    
-        </style>
+        <link rel="stylesheet" href="css/styles.css"/>
     </head>
     <body>
         <header>
-        <h1><em>Pizza Petes</em></h1>
+        <img src="images/Pizza.png" height="150" width="150" alt="Sliced Pizza"/>
+        <h1><strong>Pizza Petes</strong></h1>
         </header>
         <main>
             <h2>Pizza Order Form</h2>
                 <form id="pizza_order" action="process-form.php" method="get">
                     <fieldset id="pizza_options">
-                        <legend>Pizza Options</legend>
+                        <legend><strong>Pizza Options</strong></legend>
                         <div>
                             <label for="number_of_pizzas">Number of Pizzas</label>
                             <input type="number" id="number_of_pizzas" name="number_of_pizzas" min="1" max="10" step="1"/>
@@ -129,6 +126,29 @@
 
                             <input type="checkbox" name="toppings" id="asiago" value="asiago" />
                             <label for="asiago">Asiago</label>
+                        </div>
+                    </fieldset>
+                    <fieldset id="personal_info">
+                        <legend><strong>Personal Info</strong></legend>
+                        <div>
+                            <label for="name">Name</label>
+                            <input id="name" type="text" name="name" />                        
+                        </div>
+                        <div>
+                            <label for="phone">Phone</label>
+                            <input id="phone" type="tel" name="phone" placeholder="(000) 000-0000"/>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" />                        
+                        </div>
+                        <div>
+                            <label for="address">Delivery Address</label>
+                            <input id="address" type="text" name="address" />
+                        </div>
+                        <div>
+                            <label for="sp_inst">Special Instructions</label>
+                            <textarea name="sp_inst" id="sp_inst" rows="5" cols="50">Please fill out here</textarea>
                         </div>
                     </fieldset>
                 </form>
