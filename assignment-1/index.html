@@ -3,6 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Pizza Petes</title>
+        <style>
+            ul {list-style-type: none;
+                padding-left: 0;}
+            li {margin-bottom: 5px;}    
+        </style>
     </head>
     <body>
         <header>
@@ -11,7 +16,7 @@
         <main>
             <h2>Pizza Order Form</h2>
                 <form id="pizza_order" action="process-form.php" method="get">
-                    <fieldset>
+                    <fieldset id="pizza_options">
                         <legend>Pizza Options</legend>
                         <div>
                             <label for="number_of_pizzas">Number of Pizzas</label>
@@ -51,15 +56,20 @@
                         </div>
                         <div>
                             <h3>Cheese</h3>
-                            
+                            <ul>
+                            <li>
                             <input type="radio" name="cheese" id="none" value="none" />
                             <label for="none">None</label>
-
+                            </li>
+                            <li>
                             <input type="radio" name="cheese" id="regular" value="regular" />
                             <label for="regular">Regular</label>
-
+                            </li>
+                            <li>
                             <input type="radio" name="cheese" id="extra_cheese" value="extra_cheese" />
                             <label for="extra_cheese">Extra Cheese</label>
+                            </li>
+                            </ul>
                         </div>
                         <div>
                             <h3>Toppings</h3>
