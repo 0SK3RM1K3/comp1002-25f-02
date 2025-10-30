@@ -2,3 +2,55 @@
      padding-left: 0;}
 
 li {margin-bottom: 5px;}
+
+/* Reset default margins */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column; /* stack header, main, footer vertically */
+  min-height: 100vh;
+}
+
+/* Header styling */
+header {
+  background-color: #d32f2f;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Footer stays at the bottom */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto; /* pushes footer to bottom */
+}
+
+/* Main section centered */
+main {
+  flex: 1; /* takes up remaining space between header and footer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; /* space between form and image */
+}
+
+/* Form styling */
+form {
+  background: white;
+  padding: 25px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Pizza image styling */
+.pizza-image {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
