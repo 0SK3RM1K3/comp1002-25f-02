@@ -45,14 +45,14 @@
     echo('<ul>');
 		
 		foreach ($toppings as $item) {
-			echo('<li>'.$item.'</li?');
+			echo('<li>'.$item.'</li>');
 		};
 
 	echo('</ul>');
 
-    echo('<p>Delivered to '.$address.'</p>')
+    echo('<p>Delivered to '.$address.'</p>');
 
-    echo('<p>Special Instructions:'.$sp_inst.'</p>')
+    echo('<p>Special Instructions:'.$sp_inst.'</p>');
 ?>
 		</main>
         <footer>
