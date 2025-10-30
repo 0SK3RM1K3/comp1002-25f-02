@@ -11,7 +11,7 @@
             <h1><strong>Pizza Petes</strong></h1>
 		</header>
 		<main>
-			<h2>Account Information and Settings Updated</h2>
+			<h2>Pizza Order</h2>
 <?php
     
 	$name = $_GET["name"];
