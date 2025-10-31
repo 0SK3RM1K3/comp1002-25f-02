@@ -30,13 +30,19 @@ footer {
   margin-top: auto; /* pushes footer to bottom */
 }
 
-/* Main section centered */
 main {
-  flex: 1; /* takes up remaining space between header and footer */
+  flex: 1;
+  max-width: 875px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Only apply flex layout on the form page */
+main.form-layout {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px; /* space between form and image */
+  gap: 50px;
 }
 
 /* Form styling */
