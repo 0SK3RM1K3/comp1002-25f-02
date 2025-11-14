@@ -46,9 +46,11 @@ header nav ul {
 
 /* STEP 4a: Apply a 1px dashed red outline around each of the LI elements inside the HEADER NAV so that we can see that each LI is a box (border-width, border-style, and border-color) */
 header nav li {
-	border-width: 1px;
+	/* border-width: 1px;
 	border-style: dashed;
-	border-color: red;
+	border-color: red; */
+	display: inline-block;
+	margin-right: 0.5em;
 }
 /* STEP 4b: Set the above LI elements (which default to display: block as we can see in the browser), to display: inline-block so that they line up horizontally across the top of the page */
 
@@ -63,12 +65,14 @@ main {
 	background-color: white;
 	/* Arrange the SECTION and the ASIDE elements side-by-side in columns */
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 /* STEP 5a: Put a 1px dotted hotpink border around MAIN SECTION in the CSS rule below so we can see the box on the screen */
 main section {
-
+	/* border-width: 1px;
+	border-style: dotted;
+	border-color: hotpink; */
 	width: 60%;
 
 }
@@ -76,13 +80,16 @@ main section {
 
 main section time {
 	font-style: italic;
+	padding: 1em;
 }
 
 /* STEP 5c: After adding a colored border to the below MAIN ASIDE, go ahead and also add padding to the top, right, and bottom (not the left) */
 main aside {
-
+	/* border-width: 1px;
+	border-style: groove;
+	border-color: green; */
 	width: 40%;
-
+	padding: 10px 10px 10px 0;
 }
 /* STEP 5d: Comment out the borders for the MAIN SECTION and the MAIN ASIDE above - we don't need them anymore */
 
@@ -127,7 +134,7 @@ blockquote::first-letter {
 
 /* STEP 6: The FOOTER is a bit too close to the MAIN - add a margin-top to the FOOTER of 2rem */
 footer {
-
+	margin-top: 2rem;
 	font-size: 1.6rem;
 }
 
