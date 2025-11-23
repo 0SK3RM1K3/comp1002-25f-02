@@ -27,23 +27,49 @@ html {
 /* TITLE BLOCK */
 
 .title-block {
-    
+    position: absolute;
+    top: 375px;
+    left: 725px;
+    text-align: right;
 }
-
 .title-block h1 {
+    margin-top: 0;
+    margin-bottom: 0;
     
 }
 
 .title-block h2 {
-   
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+.title-block h3 {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
-.title-block h3 {
-    
+em {
+    font-size: 0.75rem;
 }
 
 /* CREDITS */
 
 .credits {
+    position: absolute;
+    top: 57%;
+    left: 30%;
+    text-align: right;
     
+}
+
+.credits h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.credits h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.25rem;
 }
