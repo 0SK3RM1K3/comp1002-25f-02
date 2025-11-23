@@ -1,0 +1,49 @@
+html {
+
+    background-image: url("../images/West_Side_Story_Background.png");
+    background-size: cover;
+    width: auto;
+    min-height: 190vh;
+    font-family: Arial, Helvetica, sans-serif; 
+
+}
+
+.poster { 
+    
+    color: white;
+    
+}
+
+/* TOP QUOTE */
+
+.quote p {
+    position: absolute;
+    top: 45px;
+    left: 300px;
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+
+/* TITLE BLOCK */
+
+.title-block {
+    
+}
+
+.title-block h1 {
+    
+}
+
+.title-block h2 {
+   
+}
+
+.title-block h3 {
+    
+}
+
+/* CREDITS */
+
+.credits {
+    
+}
