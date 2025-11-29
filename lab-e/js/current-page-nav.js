@@ -14,4 +14,4 @@ navLinks.forEach((element) => {
         // STEP I: They match - so this <a> is the link for the current page
         element.classList.add("current");
     };
-);
+});
